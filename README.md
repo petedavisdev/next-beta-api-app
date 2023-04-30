@@ -9,12 +9,12 @@ This is an experiment in using Next.js 13 beta with the app directory and React 
 3. Create an api route to provide paginated data passed on a param and totalPages number
 4. Add character images to api results
 5. Create a page and display the data for page 1
-   Add a next/previous links and dynamic routes to display data for other pages
-6. Create components to show item data
-7. Style the components
-8. Add error handling to api route
-9. Deploy to Vercel
-10. Any optimisations and enhancements if time allows
+6. Add a next/previous links and dynamic routes to display data for other pages
+7. Create components to show item data
+8. Style the components
+9. Add error handling to api route
+10. Deploy to Vercel
+11. Any optimisations and enhancements if time allows
 
 ## Built with my Next TS starter
 

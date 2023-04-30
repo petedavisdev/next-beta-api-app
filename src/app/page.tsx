@@ -1,11 +1,21 @@
+import { type EpisodeData } from './api/episodes/route';
+
 export default async function Home() {
-	const helloResponse = await fetch(`http://localhost:3000/api/hello`, { cache: 'force-cache' });
-	const hello = await helloResponse.json();
+	const episodesResponse = await fetch(`http://localhost:3000/api/episodes`, {
+		cache: 'force-cache',
+	});
+	const episodes = (await episodesResponse.json()) as EpisodeData;
 
 	return (
 		<div className="container">
 			<main className="main">
-				<h1 className="title">{hello} Next beta API app</h1>
+				<ol>
+					{episodes.map((episode) => (
+						<li>
+							{episode.name} - {episode.air_date}
+						</li>
+					))}
+				</ol>
 			</main>
 		</div>
 	);

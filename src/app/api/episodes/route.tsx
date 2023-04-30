@@ -23,6 +23,8 @@ type Character = {
 	img_url: string;
 };
 
+export type EpisodeData = ReturnType<typeof createEpisodeData>;
+
 const EXTERNAL_API_URL = 'https://finalspaceapi.com/api/v0/';
 const EPISODE_ENDPOINT = 'episode/';
 const CHARACTER_ENDPOINT = 'character/';
