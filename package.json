@@ -1,0 +1,29 @@
+{
+	"name": "next-ts-starter",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"new": "npx hygen component new",
+		"new:api": "npx hygen api new",
+		"new:page": "npx hygen page new"
+	},
+	"dependencies": {
+		"@types/node": "^18.16.2",
+		"@types/react": "^18.2.0",
+		"@types/react-dom": "^18.2.1",
+		"eslint": "^8.39.0",
+		"eslint-config-next": "^13.3.1",
+		"modern-normalize": "^1.1.0",
+		"next": "^13.3.1",
+		"prettier": "^2.1.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-hook-form": "^7.31.2",
+		"typescript": "^5.0.4"
+	}
+}
+
