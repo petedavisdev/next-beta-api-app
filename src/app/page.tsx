@@ -1,7 +1,14 @@
+import { EpisodeList } from 'src/components/EpisodeList/EpisodeList';
 import { type EpisodeData } from './api/episodes/route';
 
-export default async function Home() {
-	const episodesResponse = await fetch(`http://localhost:3000/api/episodes`, {
+type PageProps = {
+	searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export default async function Home(props: PageProps) {
+	const page = props.searchParams.page ?? '1';
+
+	const episodesResponse = await fetch(`http://localhost:3000/api/episodes?page=${page}`, {
 		cache: 'force-cache',
 	});
 	const episodes = (await episodesResponse.json()) as EpisodeData;
@@ -9,13 +16,8 @@ export default async function Home() {
 	return (
 		<div className="container">
 			<main className="main">
-				<ol>
-					{episodes.map((episode) => (
-						<li>
-							{episode.name} - {episode.air_date}
-						</li>
-					))}
-				</ol>
+				{props.searchParams?.page}
+				<EpisodeList episodes={episodes} page={+page} />
 			</main>
 		</div>
 	);

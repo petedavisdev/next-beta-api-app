@@ -29,14 +29,17 @@ const EXTERNAL_API_URL = 'https://finalspaceapi.com/api/v0/';
 const EPISODE_ENDPOINT = 'episode/';
 const CHARACTER_ENDPOINT = 'character/';
 
-export async function GET() {
+export async function GET(request: Request) {
+	const { searchParams } = new URL(request.url);
+	const page = searchParams.get('page') ?? '1';
+
 	const episodeResponse = await fetch(EXTERNAL_API_URL + EPISODE_ENDPOINT);
 	const episodes = (await episodeResponse.json()) as Episode[];
 
 	const characterResponse = await fetch(EXTERNAL_API_URL + CHARACTER_ENDPOINT);
 	const characters = (await characterResponse.json()) as Character[];
 
-	const paginatedEpisodes = createPaginatedData(episodes, 1, 10);
+	const paginatedEpisodes = createPaginatedData(episodes, +page, 10);
 	const episodeData = createEpisodeData(paginatedEpisodes, characters);
 	return NextResponse.json(episodeData);
 }
