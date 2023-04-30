@@ -12,5 +12,33 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "3ac4e251-d58a-471b-a4cd-c7e22353ba43",
+    "colId": "5952584f-8779-47ec-82a3-da80f8e7de5a",
+    "containerId": "",
+    "name": "episode",
+    "url": "episode/",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-04-30T15:36:25.797Z",
+    "modified": "2023-04-30T15:36:39.084Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "193d426c-ca88-4c74-9732-317008a39cc9",
+    "colId": "5dd2203f-e4b9-43b7-a791-65f6aa542a65",
+    "containerId": "",
+    "name": "episodes",
+    "url": "episodes",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-04-30T15:45:26.395Z",
+    "modified": "2023-04-30T15:45:37.438Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]

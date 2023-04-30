@@ -1,13 +1,25 @@
 [
   {
     "_id": "5dd2203f-e4b9-43b7-a791-65f6aa542a65",
-    "colName": "next-ts-starter",
+    "colName": "localhost:3000/api/",
     "created": "2023-04-30T14:27:50.216Z",
     "sortNum": 10000,
     "folders": [],
     "settings": {
       "options": {
         "baseUrl": "http://localhost:3000/api/"
+      }
+    }
+  },
+  {
+    "_id": "5952584f-8779-47ec-82a3-da80f8e7de5a",
+    "colName": "finalspaceapi.com/api/v0/",
+    "created": "2023-04-30T15:36:04.081Z",
+    "sortNum": 20000,
+    "folders": [],
+    "settings": {
+      "options": {
+        "baseUrl": "https://finalspaceapi.com/api/v0/"
       }
     }
   }
