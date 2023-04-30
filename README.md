@@ -1,4 +1,24 @@
-# Next TS starter
+# Next beta API app
+
+This is an experiment in using Next.js 13 beta with the app directory and React server components and api routes.
+
+## The plan...
+
+1. Create a new repo from [petedavisdev/next-ts-starter](https://github.com/petedavisdev/next-ts-starter) ✓
+2. Use Thunder Client to test calling an external api
+3. Create an api route to provide paginated data passed on a param and totalPages number
+4. Clean up data to provide only what’s needed in simplest structure
+5. Create a page and display the data for page 1
+   Add a next/previous links and dynamic routes to display data for other pages
+6. Create components to show item data
+7. Style the components
+8. Add error handling to api route
+9. Deploy to Vercel
+10. Any optimisations and enhancements if time allows
+
+## Built with my Next TS starter
+
+[petedavisdev/next-ts-starter](https://github.com/petedavisdev/next-ts-starter)
 
 In the box:
 

@@ -1,4 +1,4 @@
-import '../styles/base.css';
+import 'modern-normalize/modern-normalize.css';
 import '../styles/utils.css';
 
 type AppLayoutProps = {
@@ -8,3 +8,4 @@ type AppLayoutProps = {
 export default function AppLayout(props: AppLayoutProps) {
 	return props.children;
 }
+
