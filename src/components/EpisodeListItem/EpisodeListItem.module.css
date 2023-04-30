@@ -1,0 +1,32 @@
+.episode {
+	display: grid;
+	grid-template-columns: min-content auto 1fr;
+	padding-block: 1em;
+	border-bottom: 1px solid silver;
+	gap: 1em;
+}
+
+.episodeImg {
+	height: 6em;
+	width: auto;
+}
+
+.heading {
+	font-size: 1.2rem;
+	margin-block: 0;
+}
+
+.characters {
+	direction: rtl;
+	justify-self: end;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-rows: 1fr 1fr;
+	gap: 1em;
+}
+
+.characterImg {
+	height: 2.5em;
+	width: auto;
+}
+

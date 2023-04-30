@@ -16,7 +16,6 @@ export default async function Home(props: PageProps) {
 	return (
 		<div className="container">
 			<main className="main">
-				{props.searchParams?.page}
 				<EpisodeList episodes={episodes} page={+page} />
 			</main>
 		</div>

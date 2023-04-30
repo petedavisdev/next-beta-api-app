@@ -2,19 +2,20 @@
 
 This is an experiment in using Next.js 13 beta with the app directory and React server components and api routes.
 
-## The plan...
+## Done...
 
-1. Create a new repo from my starter [petedavisdev/next-ts-starter](https://github.com/petedavisdev/next-ts-starter) ✓
-2. Use Thunder Client to test calling an external api
-3. Create an api route to provide paginated data passed on a param and totalPages number
-4. Add character images to api results
-5. Create a page and display the data for page 1
-6. Add a next/previous links and dynamic routes to display data for other pages
-7. Create components to show item data
-8. Style the components
-9. Add error handling to api route
-10. Deploy to Vercel
-11. Any optimisations and enhancements if time allows
+1. ✓ Create a new repo from my starter [petedavisdev/next-ts-starter](https://github.com/petedavisdev/next-ts-starter)
+2. ✓ Use Thunder Client to test calling an external api
+3. ✓ Create an api route to provide paginated data passed on a param and totalPages number
+4. ✓ Add character images to api results
+5. ✓ Create a page and display the data for page 1
+6. ✓ Add a next/previous links and dynamic routes to display data for other pages
+7. ✓ Create and style the components to show item data
+8. ✓ Deploy to Vercel
+
+## Todo...
+
+9. Add error handling to api route and prevent paging past the end of the results
 
 ## Built with my Next TS starter
 

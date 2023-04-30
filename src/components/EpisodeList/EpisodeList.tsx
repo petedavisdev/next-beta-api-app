@@ -1,4 +1,5 @@
-import { EpisodeData } from 'src/app/api/episodes/route';
+import { type EpisodeData } from 'src/app/api/episodes/route';
+import { EpisodeListItem } from '../EpisodeListItem/EpisodeListItem';
 import styles from './EpisodeList.module.css';
 
 type EpisodeListProps = {
@@ -8,19 +9,25 @@ type EpisodeListProps = {
 
 export function EpisodeList(props: EpisodeListProps): JSX.Element {
 	return (
-		<section className={styles.EpisodeList}>
-			<ol>
-				{props.episodes.map((episode) => (
-					<li>
-						{episode.name} - {episode.air_date}
-					</li>
-				))}
-			</ol>
+		<>
+			{props.episodes.map((episode) => (
+				<EpisodeListItem episode={episode} key={episode.id} />
+			))}
 
-			{props.page > 1 && <a href={`?page=${props.page - 1}`}>Previous</a>}
+			<footer className={styles.pagination}>
+				{props.page > 1 ? (
+					<a href={`?page=${props.page - 1}`} className={styles.paginationLink}>
+						&larr; Previous
+					</a>
+				) : (
+					<span className={styles.paginationDisabled}>&larr; Previous</span>
+				)}
 
-			<a href={`?page=${props.page + 1}`}>Next</a>
-		</section>
+				<a href={`?page=${props.page + 1}`} className={styles.paginationLink}>
+					Next &rarr;
+				</a>
+			</footer>
+		</>
 	);
 }
 

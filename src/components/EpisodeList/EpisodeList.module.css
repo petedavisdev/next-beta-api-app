@@ -1,3 +1,19 @@
-.EpisodeList {
+.pagination {
 	display: grid;
+	grid-auto-flow: column;
+	justify-content: space-between;
+	margin-block: 1em;
 }
+
+.paginationLink,
+.paginationDisabled {
+	text-decoration: none;
+	padding: 0.5em 1em;
+	border: 1px solid currentColor;
+	border-radius: 0.5em;
+}
+
+.paginationDisabled {
+	color: silver;
+}
+
