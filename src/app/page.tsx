@@ -8,7 +8,7 @@ type PageProps = {
 export default async function Home(props: PageProps) {
 	const page = props.searchParams.page ?? '1';
 
-	const episodesResponse = await fetch(`http://localhost:3000/api/episodes?page=${page}`, {
+	const episodesResponse = await fetch(`${process.env.BASE_URL}api/episodes?page=${page}`, {
 		cache: 'force-cache',
 	});
 	const episodes = (await episodesResponse.json()) as EpisodeData;
@@ -21,4 +21,3 @@ export default async function Home(props: PageProps) {
 		</div>
 	);
 }
-

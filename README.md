@@ -2,6 +2,8 @@
 
 This is an experiment in using Next.js 13 beta with the app directory and React server components and api routes.
 
+Live demo: [next-beta-api-app.vercel.app](https://next-beta-api-app.vercel.app/)
+
 ## Done...
 
 1. ✓ Create a new repo from my starter [petedavisdev/next-ts-starter](https://github.com/petedavisdev/next-ts-starter)
@@ -11,17 +13,17 @@ This is an experiment in using Next.js 13 beta with the app directory and React 
 5. ✓ Create a page and display the data for page 1
 6. ✓ Add a next/previous links and dynamic routes to display data for other pages
 7. ✓ Create and style the components to show item data
-8. ✓ Deploy to Vercel
+8. ✓ Deploy to Vercel [next-beta-api-app.vercel.app](https://next-beta-api-app.vercel.app/)
 
 ## Todo...
 
 9. Add error handling to api route and prevent paging past the end of the results
+10. Error handling for fetch responses
+11. Responsive styling for smaller screens
 
 ## Built with my Next TS starter
 
 [petedavisdev/next-ts-starter](https://github.com/petedavisdev/next-ts-starter)
-
-In the box:
 
 - Next.js 13 beta with the app directory and React server components.
 - TypeScript
@@ -39,38 +41,4 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Generate Pages and Components with Hygen
-
-The `_templates` folder contains code used to generate new pages and components. This improves consistency and saves some typing.
-
-### New component
-
-```bash
-npm run new
-```
-
-### New api route
-
-```bash
-npm run new:api
-```
-
-### New page
-
-```bash
-npm run new:page
-```
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
