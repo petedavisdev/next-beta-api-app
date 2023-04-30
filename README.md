@@ -7,7 +7,7 @@ This is an experiment in using Next.js 13 beta with the app directory and React 
 1. Create a new repo from my starter [petedavisdev/next-ts-starter](https://github.com/petedavisdev/next-ts-starter) ✓
 2. Use Thunder Client to test calling an external api
 3. Create an api route to provide paginated data passed on a param and totalPages number
-4. Clean up data to provide only what’s needed in simplest structure
+4. Add character images to api results
 5. Create a page and display the data for page 1
    Add a next/previous links and dynamic routes to display data for other pages
 6. Create components to show item data

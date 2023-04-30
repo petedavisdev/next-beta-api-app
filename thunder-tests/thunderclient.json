@@ -40,5 +40,19 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "e2fcac23-a84e-416c-87d3-819361b183c3",
+    "colId": "5952584f-8779-47ec-82a3-da80f8e7de5a",
+    "containerId": "",
+    "name": "character",
+    "url": "character",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-04-30T16:44:50.546Z",
+    "modified": "2023-04-30T16:44:54.464Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
